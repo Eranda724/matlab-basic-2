@@ -1,0 +1,5 @@
+%2021E075
+%1a.
+F=imread('Figure 3.jpg');
+imshow(F);
+size(F)

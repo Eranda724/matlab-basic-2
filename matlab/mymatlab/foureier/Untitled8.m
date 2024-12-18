@@ -1,0 +1,30 @@
+figure
+h = 1;
+f0=25;
+Np=400;
+t=0:1/Fs:1;
+ys = sin(2*pi*h*25*t(1:Np));
+yc = cos(2*pi*h*f0*t(1:Np));
+A1 = 2/Np*sum(yc.*y);
+B1 = 2/Np*sum(ys.*y);
+h=2;
+ys = sin(2*pi*h*25*t);
+yc = cos(2*pi*h*f0*t);
+A2 = 2/Np*sum(yc.*y);
+B2 = 2/Np*sum(ys.*y);
+
+h=3;
+ys = sin(2*pi*h*25*t);
+yc = cos(2*pi*h*f0*t);
+A3 = 2/Np*sum(yc.*y);
+B3 = 2/Np*sum(ys.*y);
+h=4;
+ys = sin(2*pi*h*25*t);
+yc = cos(2*pi*h*f0*t);
+A4 = 2/Np*sum(yc.*y);
+B4 = 2/Np*sum(ys.*y);
+h=5;
+ys = sin(2*pi*h*25*t);
+yc = cos(2*pi*h*f0*t);
+A5 = 2/Np*sum(yc.*y);
+B5 = 2/Np*sum(ys.*y);
